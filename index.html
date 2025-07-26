@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Honeypot Hotel - Where Scammers Check In, But Their Sanity Never Checks Out</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Honey Theme -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-hotel"></i>
+                <h1>The Honeypot Hotel</h1>
+                <span class="tagline">Where Scammers Check In, But Their Sanity Never Checks Out</span>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <i class="fas fa-bug"></i>
+                    <span class="stat-number" id="activeScammers">0</span>
+                    <span class="stat-label">Active Scammers</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span class="stat-number" id="hoursWasted">0</span>
+                    <span class="stat-label">Hours Wasted</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-skull"></i>
+                    <span class="stat-number" id="rageQuits">0</span>
+                    <span class="stat-label">Rage Quits</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <!-- Control Panel -->
+        <section class="control-panel">
+            <div class="panel-header">
+                <h2><i class="fas fa-cogs"></i> Control Center</h2>
+                <div class="status-indicator">
+                    <span class="status-dot active"></span>
+                    <span>System Online</span>
+                </div>
+            </div>
+            <div class="control-grid">
+                <div class="control-card">
+                    <h3>Personality Matrix</h3>
+                    <div class="personality-selector">
+                        <button class="personality-btn active" data-personality="eager">
+                            <i class="fas fa-heart"></i>
+                            Overeager Victim
+                        </button>
+                        <button class="personality-btn" data-personality="romance">
+                            <i class="fas fa-venus-mars"></i>
+                            Romance Psychopath
+                        </button>
+                        <button class="personality-btn" data-personality="philosophical">
+                            <i class="fas fa-brain"></i>
+                            Philosophical Inquisitor
+                        </button>
+                    </div>
+                </div>
+                <div class="control-card">
+                    <h3>Deployment Status</h3>
+                    <div class="deployment-stats">
+                        <div class="deployment-item">
+                            <span class="deployment-label">Active Honeypots:</span>
+                            <span class="deployment-value" id="activeHoneypots">47</span>
+                        </div>
+                        <div class="deployment-item">
+                            <span class="deployment-label">Emails Generated:</span>
+                            <span class="deployment-value" id="emailsGenerated">1,234</span>
+                        </div>
+                        <div class="deployment-item">
+                            <span class="deployment-label">Response Rate:</span>
+                            <span class="deployment-value" id="responseRate">89%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Feed -->
+        <section class="live-feed">
+            <div class="panel-header">
+                <h2><i class="fas fa-broadcast-tower"></i> Live Scammer Feed</h2>
+                <div class="feed-controls">
+                    <button class="btn-secondary" id="pauseFeed">
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button class="btn-secondary" id="clearFeed">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                </div>
+            </div>
+            <div class="feed-container" id="scammerFeed">
+                <!-- Feed items will be dynamically added here -->
+                <div class="feed-item new">
+                    <div class="feed-header">
+                        <span class="scammer-id">Scammer #47</span>
+                        <span class="feed-time">2 minutes ago</span>
+                        <span class="personality-tag romance">Romance Psychopath</span>
+                    </div>
+                    <div class="feed-content">
+                        <p class="scammer-message">"Hello beautiful, I am lonely soldier in Syria..."</p>
+                        <p class="ai-response">"OH MY GOD! I've been waiting for you my whole life! I've already told my mom about us and she's making meatloaf for when you visit! When can we get matching tattoos? I've named our future children already!"</p>
+                    </div>
+                    <div class="feed-metrics">
+                        <span class="metric"><i class="fas fa-clock"></i> 3 hours engaged</span>
+                        <span class="metric"><i class="fas fa-thermometer-half"></i> Stress Level: 87%</span>
+                        <span class="metric"><i class="fas fa-messages"></i> 47 messages sent</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Dashboard -->
+        <section class="analytics">
+            <div class="panel-header">
+                <h2><i class="fas fa-chart-line"></i> Psychological Warfare Analytics</h2>
+                <div class="time-filter">
+                    <button class="time-btn active" data-time="24h">24h</button>
+                    <button class="time-btn" data-time="7d">7d</button>
+                    <button class="time-btn" data-time="30d">30d</button>
+                </div>
+            </div>
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>Scammer Stress Levels</h3>
+                    <div class="chart-container">
+                        <canvas id="stressChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <h3>Personality Effectiveness</h3>
+                    <div class="effectiveness-bars">
+                        <div class="effectiveness-item">
+                            <span class="personality-name">Romance Psychopath</span>
+                            <div class="effectiveness-bar">
+                                <div class="effectiveness-fill" style="width: 94%"></div>
+                            </div>
+                            <span class="effectiveness-value">94%</span>
+                        </div>
+                        <div class="effectiveness-item">
+                            <span class="personality-name">Philosophical Inquisitor</span>
+                            <div class="effectiveness-bar">
+                                <div class="effectiveness-fill" style="width: 87%"></div>
+                            </div>
+                            <span class="effectiveness-value">87%</span>
+                        </div>
+                        <div class="effectiveness-item">
+                            <span class="personality-name">Overeager Victim</span>
+                            <div class="effectiveness-bar">
+                                <div class="effectiveness-fill" style="width: 76%"></div>
+                            </div>
+                            <span class="effectiveness-value">76%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hall of Fame -->
+        <section class="hall-of-fame">
+            <div class="panel-header">
+                <h2><i class="fas fa-trophy"></i> Hall of Fame - Scammer Torture Champions</h2>
+            </div>
+            <div class="fame-grid">
+                <div class="fame-card">
+                    <div class="fame-header">
+                        <i class="fas fa-crown"></i>
+                        <h3>Most Confused Scammer</h3>
+                    </div>
+                    <div class="fame-content">
+                        <p class="fame-quote">"I don't understand... why are you asking about my astrological sign before sending money?"</p>
+                        <div class="fame-stats">
+                            <span><i class="fas fa-clock"></i> 12 hours engaged</span>
+                            <span><i class="fas fa-brain"></i> 100% confused</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fame-card">
+                    <div class="fame-header">
+                        <i class="fas fa-fire"></i>
+                        <h3>Biggest Rage Quit</h3>
+                    </div>
+                    <div class="fame-content">
+                        <p class="fame-quote">"STOP SENDING ME POEMS ABOUT MY GRANDMOTHER! I BLOCK YOU!"</p>
+                        <div class="fame-stats">
+                            <span><i class="fas fa-thermometer-full"></i> 100% rage</span>
+                            <span><i class="fas fa-ban"></i> Blocked after 3 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fame-card">
+                    <div class="fame-header">
+                        <i class="fas fa-heart-broken"></i>
+                        <h3>Most Emotional Damage</h3>
+                    </div>
+                    <div class="fame-content">
+                        <p class="fame-quote">"You made me question my entire career choice..."</p>
+                        <div class="fame-stats">
+                            <span><i class="fas fa-sad-tear"></i> Existential crisis</span>
+                            <span><i class="fas fa-user-graduate"></i> Career change</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <p>&copy; 2025 The Honeypot Hotel - Psychological Warfare Division</p>
+                <p class="footer-tagline">Remember: We're not just wasting their time, we're making them question their life choices.</p>
+            </div>
+            <div class="footer-hotel-info">
+                <div class="hotel-stats">
+                    <span><i class="fas fa-concierge-bell"></i> Concierge: Available 24/7</span>
+                    <span><i class="fas fa-shield-alt"></i> Security: Maximum Psychological Protection</span>
+                    <span><i class="fas fa-star"></i> Rating: 5 Stars (Scammer Confusion Scale)</span>
+                </div>
+                <div class="developer-info">
+                    <p><i class="fas fa-hard-hat"></i> <strong>Hotel Architect & Chief Tormentor:</strong> Jin Park</p>
+                    <p class="developer-tagline">"Building psychological mazes since 2025 - where every scammer's nightmare becomes our dream come true"</p>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p><i class="fas fa-info-circle"></i> <em>Disclaimer: This is not an actual hotel. No real guests were psychologically harmed in the making of this honeypot. Scammers, however, may experience existential crises.</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/feed.js"></script>
+</body>
+</html> 
