@@ -1,7 +1,13 @@
 
+<div align="center">
+
+![The Honeypot Hotel Logo](assets/logo.png)
+
 # 🍯 The Honeypot Hotel 🏨
 
 ## *Where Scammers Check In... But Their Sanity Never Checks Out*
+
+</div>
 
 ---
 
@@ -349,11 +355,17 @@ You wanted easy money? Enjoy spending weeks explaining why you can't provide ast
 
 ---
 
+<div align="center">
+
+![The Honeypot Hotel Logo](assets/logo.png)
+
 *The Honeypot Hotel - Digital Predator Division*
 
 *"Where Every Scammer's Nightmare Becomes Our Guest's Entertainment"*
 
 **No Vacancy • No Escape • No Mercy**
+
+</div>
 
 [![🏨 Enter if You Dare](https://img.shields.io/badge/🏨%20Enter%20Hotel-If%20You%20Dare-darkred?style=for-the-badge&labelColor=black)]()
 
