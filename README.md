@@ -265,15 +265,15 @@ Transform every transaction into a deep dive into the meaning of existence. Watc
 
 ### **Core Architecture**
 
-- **Written in:** Python, Rust, and righteous fury
+- **Frontend:** Vanilla JavaScript, HTML5, CSS3 (pure client-side performance)
 
-- **Deployed via:** Docker + Kubernetes orchestration
+- **Deployed via:** GitHub Pages (free hosting, instant deployment)
 
-- **AI Training:** LLM personas trained on thousands of scam transcripts and therapy chat logs
+- **AI Responses:** Hardcoded personality templates with free LLM API integration planned
 
-- **Hosting:** Ephemeral, cloud-based VMs with comprehensive snapshot logging
+- **Hosting:** Static site with simulated data (real backend integration in development)
 
-- **Output:** Legal-grade intelligence packages for law enforcement
+- **Output:** Beautiful dashboard with live feed simulation and analytics
 
 ### **Security Features**
 
@@ -285,15 +285,15 @@ Transform every transaction into a deep dive into the meaning of existence. Watc
 
 - **Automated Reporting:** Direct pipeline to cybercrime authorities
 
-### **Free-Tier Deployment**
+### **Current MVP Status**
 
-- **Frontend:** GitHub Pages hosting (because even nightmares need good UX)
+- **Frontend:** ✅ GitHub Pages hosting with beautiful honey-themed UI
 
-- **Backend:** Netlify Functions (serverless psychological warfare)
+- **Backend:** 🚧 Netlify Functions (planned for Phase 2)
 
-- **Email Infrastructure:** Temp mail APIs for unlimited disposable identities
+- **Email Infrastructure:** 🚧 Temp mail APIs integration (planned for Phase 2)
 
-- **AI Responses:** Free LLM APIs with hardcoded fallbacks for reliability
+- **AI Responses:** ✅ Hardcoded personality templates (LLM integration planned)
 
 ---
 
